@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@android:drawable/ic_menu_myplaces"
+            app:tint="@color/primary"
+            android:contentDescription="Helping Hands logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Helping Hands"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Together, We Can Make a Difference"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:gravity="center"
+            android:layout_marginTop="8dp"/>
+
+        <View
+            android:layout_width="55dp"
+            android:layout_height="4dp"
+            android:background="@color/accent"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Small Acts, Big Changes"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connect with people who need help. Share kindness, support genuine causes and make a difference in someone's life."
+            android:textSize="15sp"
+            android:textColor="@color/text_secondary"
+            android:gravity="center"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginTop="15dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="LOGIN"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="45dp"
+            app:cornerRadius="12dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="CREATE ACCOUNT"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/primary"
+            app:backgroundTint="@color/primary_light"
+            app:cornerRadius="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SDG 1 - NO POVERTY"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_marginTop="35dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

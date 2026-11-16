@@ -1,0 +1,72 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvAdminGreeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome, Administrator"
+        android:textColor="@color/primary"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage and verify assistance requests."
+        android:textColor="@color/text_secondary"
+        android:textSize="15sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="30dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="3dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Assistance Requests"
+                android:textColor="@color/primary"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Review beneficiary applications and approve or reject requests."
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnManageRequests"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manage Requests"
+                android:textAllCaps="false"
+                app:cornerRadius="12dp"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Helping Hands"
+                android:textColor="@color/primary"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/tvBeneficiaryGreeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome, Beneficiary"
+                android:textColor="@color/text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We are here to connect you with helping hands."
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Need Assistance?"
+                        android:textColor="@color/primary"
+                        android:textSize="19sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Submit a request explaining your needs. Our admin will review and verify your request."
+                        android:textColor="@color/text_secondary"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnCreateRequest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Submit Assistance Request"
+                        android:layout_marginTop="20dp"
+                        app:cornerRadius="10dp"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMyRequests"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Requests"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="10dp"
+                style="@style/Widget.Material3.Button.OutlinedButton"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:menu="@menu/bottom_navigation_menu"
+        app:labelVisibilityMode="labeled"/>
+
+</LinearLayout>
